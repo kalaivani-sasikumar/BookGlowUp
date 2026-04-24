@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#312a44"
+    android:id="@+id/main"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BOOKING DETAILS"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserratbold"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"/>
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="260dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Services"
+                android:textColor="#312a44"
+                android:fontFamily="@font/montserratbold"
+                android:layout_marginTop="20dp"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/bookingRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"/>
+
+
+            <!-- Booking Date Row -->
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Date : "
+                    android:textColor=" #312a44"
+                    android:fontFamily="@font/montserratbold"
+                   />
+
+                <TextView
+                    android:id="@+id/bookingDate"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+
+            <!-- Booking Time Row -->
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Time : "
+                    android:fontFamily="@font/montserratbold"
+                    android:textStyle="bold"
+                    android:textColor=" #312a44"/>
+
+                <TextView
+                    android:id="@+id/bookingTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:fontFamily="@font/montserratlight"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <Button
+
+            android:id="@+id/paymentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="380dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Payment Details"
+            android:fontFamily="@font/montserratbold"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="5dp"
+            android:backgroundTint="#312a44"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

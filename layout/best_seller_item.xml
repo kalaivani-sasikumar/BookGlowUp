@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:padding="10dp"
+    android:background="@drawable/bg_circle">
+
+    <ImageView
+        android:id="@+id/serviceImage"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/skin1"/>
+
+    <TextView
+        android:id="@+id/serviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hydra Facial"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserratlight"
+        android:textSize="13sp"
+        android:textColor="#312a44"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/servicePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹1200"
+        android:textSize="12sp"
+        android:textColor="#7A5C8F"/>
+
+</LinearLayout>

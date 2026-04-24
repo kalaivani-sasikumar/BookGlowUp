@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:viewBindingIgnore="true"
+    tools:context=".WelcomeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserratlight"
+        android:text="Welcome!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="359dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="@font/montserratlight"
+        android:text="Book Your Saloon Services Quickly and easily"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/welcome3"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/log_in_btn"
+        android:layout_width="339dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="58dp"
+        android:backgroundTint="#312a44"
+        android:text="Login"
+        android:fontFamily="@font/montserratlight"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/sign_up_btn"
+        android:layout_width="338dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#88708e"
+        android:text="SignUp"
+        android:textSize="20sp"
+        android:fontFamily="@font/montserratlight"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>
