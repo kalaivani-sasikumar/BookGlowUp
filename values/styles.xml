@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="timeButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:backgroundTint">#88708e</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="timeButtonSelected">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">@drawable/time_selected</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+    <style name="DarkCalendarTheme" parent="Theme.MaterialComponents.Light">
+
+        <!-- Selected date background -->
+        <item name="android:colorAccent">#312a44</item>
+        <item name="colorPrimary">#312a44</item>
+        <item name="colorPrimaryVariant">#312a44</item>
+        <!-- Selected date text color -->
+        <item name="android:textColorPrimaryInverse">#FFFFFF</item>
+        <!-- Normal date color -->
+        <item name="android:textColorPrimary">#312a44</item>
+        <item name="android:textColorSecondary">#312a44</item>  <!-- ADD -->
+        <item name="colorControlNormal">#312a44</item>  <!-- ADD -->
+    </style>
+
+    <style name="CalText">
+        <item name="android:textColorSecondary">#312a44</item>  <!-- ADD -->
+        <item name="android:textColorPrimary">#312a44</item>
+        <item name="colorControlNormal">#312a44</item>
+        <item name="android:textColor">#312a44</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+</resources>
